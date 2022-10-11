@@ -1,0 +1,438 @@
+/**font-family: 'Kaushan Script', cursive;
+font-family: 'Lato', sans-serif;*/
+*{
+    padding : 0;
+    margin :0;
+    box-sizing : border-box;
+}
+body{
+    background-image: linear-gradient(to bottom, #e0aa69, #e6b57a, #ecbf8b, #f2ca9c, #f8d5ad, #fadbb7, #fce1c1, #fee7cb, #fde9d0, #fdebd5, #fceddb, #fbefe0);
+    font-family: 'lato';
+}
+/* header */
+header{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "logo navBar";
+    place-content: center center;
+}
+.logo{ 
+    grid-area: logo;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navBar{
+    grid-area: navBar;
+    align-self: center;
+}
+header div a img{
+    width: 100%;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px;
+}
+header div p{
+    font-family: 'kaushan script';
+    font-size: large;
+    margin:0px 0px 0px 25px;
+}
+.navBar1{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.navBar1 li{
+    list-style: none;
+    font-weight: bold;
+    font-size: larger;
+    padding: 10px 50px;
+}
+.navBar1 li a{
+    text-decoration: none;
+
+}
+.navBar1 li a:visited{
+    color: black
+}
+.navBar1 li a:hover{
+    color: firebrick;
+}
+
+.logoAnimado{ 
+    position: relative;
+    animation-name: scale-in-center;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes scale-in-center {
+    0% {
+    -webkit-transform: scale(0);
+        transform: scale(0);
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    }
+}
+@keyframes scale-in-center {
+    0% {
+    -webkit-transform: scale(0);
+        transform: scale(0);
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: scale(1);
+        transform: scale(1);
+    opacity: 1;
+    }
+}
+
+/* footer */
+footer{
+    display: flex;
+}
+.footerLogos{
+    width: 50px;
+    height:50px;
+    padding: 5px;
+}
+.footerInstagram{
+    padding: 20px 10px 20px 30px;
+    width:800px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerDireccion{
+    padding: 20px 10px 20px 30px;
+    width:800px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div a img:hover{
+    transform: scale(1.2);
+}
+
+/* home */
+.imagenHome{
+    width: 100%;
+    height:530px;
+    background-image: url(../assets/img/food-pics/kebab-main.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*grid de home*/
+.containerHome{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 70% 15%;
+    grid-template-areas: 
+    "headerHome"
+    "mainHome"
+    "footerHome"; 
+}
+
+.headerHome{
+    grid-area: headerHome;
+}
+
+.mainHome{
+    grid-area: mainHome;
+}
+
+.footerHome{
+    grid-area: footerHome;
+    align-self: flex-end;
+}
+
+/* titulo de todas paginas */
+h1{
+    font-family: 'kaushan script';
+    text-align: center;
+}
+
+/* nosotros */
+
+.nosotros{
+    font-family: 'lato';
+    font-size: 25px;
+    font-weight: 600;
+    text-align: justify;
+    padding: 15px 40px;
+}
+
+.imagenUs{
+    width: 100%;
+    height:280px;
+    background-image: url(../assets/img/food-pics/falafel-us.png);
+    background-position: center;
+    background-size: cover;
+    }
+
+/*grid de nosotros*/
+.containerUs{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 70% 15%;
+    grid-template-areas: 
+    "headerUs"
+    "mainUs"
+    "footerUs"; 
+}
+
+.headerUs{
+    grid-area: headerUs;
+}
+
+.mainUs{
+    grid-area: mainUs;
+}
+
+.footerUs{
+    grid-area: footerUs;
+    align-self: flex-end;
+}
+
+
+/* menu */
+.menuTitle{
+    text-align: center;
+}
+.comidas{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat (3, 1fr);
+    grid-template-areas: 
+    "shawarma falafel"
+    "fatay shishKebab"
+    "hummus fries"
+    }
+.shawarma{
+    margin: 20px;
+    grid-area: shawarma;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.falafel{
+    margin: 20px;
+    grid-area: falafel;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.fatay{ 
+    margin: 20px;
+    grid-area: fatay;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.shishKebab{
+    margin: 20px;
+    grid-area: shishKebab;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.hummus{
+    margin: 20px;
+    grid-area: hummus;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.fries{ 
+    margin: 20px;
+    grid-area: fries;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/*grid de menu*/
+.containerMenu{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 70% 15%;
+    grid-template-areas: 
+    "headerMenu"
+    "mainMenu"
+    "footerMenu"; 
+}
+
+.headerMenu{
+    grid-area: headerMenu;
+}
+
+.mainMenu{
+    grid-area: mainMenu;
+}
+
+.footerMenu{
+    grid-area: footerMenu;
+    align-self: flex-end;
+}
+
+/* pedidos */
+.pedidosYa{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pedidosYaLogo{
+    width: 150px;
+    height: 60px;
+}
+.whatsapp{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.whatsappLogo{
+    width: 50px;
+    height: 50px;
+}
+.ubicacion{
+    padding: 10px 30px;
+}
+.direccion{
+    padding: 10px 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map{ 
+    display: flex;
+    justify-content: center;
+}
+
+
+/*grid de pedidos*/
+.containerPedidos{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 70% 15%;
+    grid-template-areas: 
+    "headerPedidos"
+    "mainPedidos"
+    "footerPedidos"; 
+}
+
+.headerPedidos{
+    grid-area: headerPedidos;
+}
+
+.mainPedidos{
+    grid-area: mainPedidos;
+}
+
+.footerPedidos{
+    grid-area: footerPedidos;
+    align-self: flex-end;
+}
+/* pagina sugerencias */
+.formulario{
+    margin: 20px 500px;
+    background: #FFEFBA;  
+    background: -webkit-linear-gradient(to left top, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}    
+
+.form{
+    margin:10px;
+}
+.calificacion{
+    display:flex;
+    justify-content: left;
+}
+.valoracion{
+    padding: 5px;
+}
+.enviar{
+    margin: 10px;
+    padding: 10px;
+}
+
+/*grid de sugerencias*/
+.containerSugerencias{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 15%  70% 15%;
+    grid-template-areas: 
+    "headerSugerencias"
+    "mainSugerencias"
+    "footerSugerencias"; 
+}
+
+.headerSugerencias{
+    grid-area: headerSugerencias;
+}
+
+.mainSugerencias{
+    grid-area: mainSugerencias;
+}
+
+.footerSugerencias{
+    grid-area: footerSugerencias;
+    align-self: flex-end;
+}
+
+/* media querries tablet*/ 
+@media screen and (max-width:768px) {
+    header{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (2,1fr);
+        grid-template-areas: 
+        "logo"
+        "navBar";
+        place-content: center center;
+    }
+    .formulario{
+        margin: 30px 200px;
+    }
+
+.containerPedidos{
+    height: 100vh;
+}
+.food{
+    margin: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
+
+/*media querries mobile*/
+@media screen and (max-width:576px){
+    .imagenHome{
+        height:300px;
+margin: 20px 0px;
+    }
+}
