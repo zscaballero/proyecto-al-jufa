@@ -53,7 +53,9 @@ header div p{
 }
 .navBar1 li a{
     text-decoration: none;
-
+}
+.navBar1 li a:link{
+    color: black;
 }
 .navBar1 li a:visited{
     color: black
@@ -431,8 +433,94 @@ h1{
 
 /*media querries mobile*/
 @media screen and (max-width:576px){
+    header{
+flex-direction: column;
+width: 100%;
+    }
     .imagenHome{
-        height:300px;
-margin: 20px 0px;
+        height:300px; 
+        margin: 20px 0px;
+    }
+
+    .comidas{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat (1, 1fr);
+        grid-template-rows: repeat (6, 1fr);
+        grid-template-areas: 
+        "shawarma" 
+        "falafel"
+        "fatay" 
+        "shishKebab"
+        "hummus" 
+        "fries"
+        }
+    .shawarma{
+        margin: 20px;
+        grid-area: shawarma;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .falafel{
+        margin: 20px;
+        grid-area: falafel;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .fatay{ 
+        margin: 20px;
+        grid-area: fatay;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .shishKebab{
+        margin: 20px;
+        grid-area: shishKebab;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .hummus{
+        margin: 20px;
+        grid-area: hummus;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .fries{ 
+        margin: 20px;
+        grid-area: fries;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .containerMenu{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 150px auto 100px;
+        grid-template-areas: 
+        "headerMenu"
+        "mainMenu"
+        "footerMenu"; 
+    }
+    
+    .headerMenu{
+        grid-area: headerMenu;
+        flex-flow: row wrap;
+    }
+    
+    .mainMenu{
+        grid-area: mainMenu;
+    }
+    
+    .footerMenu{
+        grid-area: footerMenu;
+        align-self: flex-end;
     }
 }
