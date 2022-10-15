@@ -303,8 +303,8 @@ h1{
 .formulario{
     margin: 20px 500px;
     background: #FFEFBA;  
-    background: -webkit-linear-gradient(to left top, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to left top, #FFFFFF, #FFEFBA);  
+    background: linear-gradient(to left top, #FFFFFF, #FFEFBA); 
 }    
 
 .form{
@@ -344,17 +344,13 @@ h1{
         border-radius: 50%;
         margin: 10px;}
     
-        .navBarItems a:link{
-            color: white;
-        }
-        .navBar1 a:visited{
-            color: white
-        }
-
     .formulario{
         margin: 30px 200px;
     }
-.main{
+.mainIndex{
+    height: 80vh;
+}
+.mainNosotros{
     height: 80vh;
 }
 
@@ -385,14 +381,7 @@ h1{
         border-radius: 50%;
         margin: 10px;
     }
-
-    .navBarItems a:link{
-        color: white;
-    }
-    .navBar1 a:visited{
-        color: white
-    }
-    .main{ 
+    .mainIndex{ 
         height: 70vh;
     }
     .imagenHome{
@@ -401,6 +390,9 @@ h1{
         background-image: url(../assets/img/food-pics/kebab-main.jpg);
         background-position: center;
         background-size: cover;
+    }
+    .mainNosotros{
+        height: 200vh;
     }
     .comidas{
         display: grid;
