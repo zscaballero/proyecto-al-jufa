@@ -123,6 +123,33 @@ footer{
 footer div a img:hover{
     transform: scale(1.2);
 }
+/*grid*/
+.container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px 1fr 100px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"; 
+}
+
+.header{
+    grid-area: header;
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+    align-self: flex-end;
+}
+.mainSugerencias{
+    height: 100vh;
+}
 
 /* home */
 .imagenHome{
@@ -133,31 +160,6 @@ footer div a img:hover{
     background-size: cover;
 }
 
-/*grid de home*/
-.containerHome{
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 70% 15%;
-    grid-template-areas: 
-    "headerHome"
-    "mainHome"
-    "footerHome"; 
-}
-
-.headerHome{
-    grid-area: headerHome;
-}
-
-.mainHome{
-    grid-area: mainHome;
-}
-
-.footerHome{
-    grid-area: footerHome;
-    align-self: flex-end;
-}
 
 /* titulo de todas paginas */
 h1{
@@ -182,32 +184,6 @@ h1{
     background-position: center;
     background-size: cover;
     }
-
-/*grid de nosotros*/
-.containerUs{
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 70% 15%;
-    grid-template-areas: 
-    "headerUs"
-    "mainUs"
-    "footerUs"; 
-}
-
-.headerUs{
-    grid-area: headerUs;
-}
-
-.mainUs{
-    grid-area: mainUs;
-}
-
-.footerUs{
-    grid-area: footerUs;
-    align-self: flex-end;
-}
 
 
 /* menu */
@@ -269,30 +245,6 @@ h1{
     align-items: center;
 }
 
-/*grid de menu*/
-.containerMenu{
-    display: grid;
-    width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 70% 15%;
-    grid-template-areas: 
-    "headerMenu"
-    "mainMenu"
-    "footerMenu"; 
-}
-
-.headerMenu{
-    grid-area: headerMenu;
-}
-
-.mainMenu{
-    grid-area: mainMenu;
-}
-
-.footerMenu{
-    grid-area: footerMenu;
-    align-self: flex-end;
-}
 
 /* pedidos */
 .pedidosYa{
@@ -331,31 +283,6 @@ h1{
     justify-content: center;
 }
 
-
-/*grid de pedidos*/
-.containerPedidos{
-    display: grid;
-    width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 70% 15%;
-    grid-template-areas: 
-    "headerPedidos"
-    "mainPedidos"
-    "footerPedidos"; 
-}
-
-.headerPedidos{
-    grid-area: headerPedidos;
-}
-
-.mainPedidos{
-    grid-area: mainPedidos;
-}
-
-.footerPedidos{
-    grid-area: footerPedidos;
-    align-self: flex-end;
-}
 /* pagina sugerencias */
 .formulario{
     margin: 20px 500px;
@@ -379,32 +306,6 @@ h1{
     padding: 10px;
 }
 
-/*grid de sugerencias*/
-.containerSugerencias{
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: 100%;
-    grid-template-rows: 15%  70% 15%;
-    grid-template-areas: 
-    "headerSugerencias"
-    "mainSugerencias"
-    "footerSugerencias"; 
-}
-
-.headerSugerencias{
-    grid-area: headerSugerencias;
-}
-
-.mainSugerencias{
-    grid-area: mainSugerencias;
-}
-
-.footerSugerencias{
-    grid-area: footerSugerencias;
-    align-self: flex-end;
-}
-
 /* media querries tablet*/ 
 @media screen and (max-width:768px) {
     header{
@@ -421,27 +322,39 @@ h1{
         margin: 30px 200px;
     }
 
-.containerPedidos{
+.main{ 
     height: 100vh;
+}
 }
 .food{
     margin: 30px;
     flex-direction: column;
     align-items: flex-start;
 }
-}
+
 
 /*media querries mobile*/
 @media screen and (max-width:576px){
     header{
-flex-direction: column;
-width: 100%;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (2,1fr);
+        grid-template-areas: 
+        "logo"
+        "navBar";
+        place-content: center center;
+    }
+    .mainHome{ 
+        height: 100vh;
     }
     .imagenHome{
-        height:300px; 
-        margin: 20px 0px;
+        width: 100%;
+        height:300px;
+        background-image: url(../assets/img/food-pics/kebab-main.jpg);
+        background-position: center;
+        background-size: cover;
     }
-
     .comidas{
         display: grid;
         width: 100%;
@@ -455,72 +368,4 @@ width: 100%;
         "hummus" 
         "fries"
         }
-    .shawarma{
-        margin: 20px;
-        grid-area: shawarma;
-        display: flex;
-        gap: 20px;
-        align-items: center;
     }
-    .falafel{
-        margin: 20px;
-        grid-area: falafel;
-        display: flex;
-        gap: 20px;
-        align-items: center;
-    }
-    .fatay{ 
-        margin: 20px;
-        grid-area: fatay;
-        display: flex;
-        gap: 20px;
-        align-items: center;
-    }
-    .shishKebab{
-        margin: 20px;
-        grid-area: shishKebab;
-        display: flex;
-        gap: 20px;
-        align-items: center;
-    }
-    
-    .hummus{
-        margin: 20px;
-        grid-area: hummus;
-        display: flex;
-        gap: 20px;
-        align-items: center;
-    }
-    
-    .fries{ 
-        margin: 20px;
-        grid-area: fries;
-        display: flex;
-        gap: 20px;
-        align-items: center;
-    }
-    .containerMenu{
-        display: grid;
-        width: 100%;
-        grid-template-columns: 100%;
-        grid-template-rows: 150px auto 100px;
-        grid-template-areas: 
-        "headerMenu"
-        "mainMenu"
-        "footerMenu"; 
-    }
-    
-    .headerMenu{
-        grid-area: headerMenu;
-        flex-flow: row wrap;
-    }
-    
-    .mainMenu{
-        grid-area: mainMenu;
-    }
-    
-    .footerMenu{
-        grid-area: footerMenu;
-        align-self: flex-end;
-    }
-}
