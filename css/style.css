@@ -95,6 +95,22 @@ header div p{
     }
 }
 
+/*header con bootstrap*/
+.navBarItems{
+    font-weight: bold;
+    font-size: larger;
+}
+.navBarItems a:link{
+    color: black;
+}
+.navBarItems a:visited{
+    color: black
+}
+.navBarItems a:hover{
+    color: firebrick;
+}
+
+
 /* footer */
 footer{
     display: flex;
@@ -124,7 +140,7 @@ footer div a img:hover{
     transform: scale(1.2);
 }
 /*grid*/
-.container{
+.contenedor{
     display: grid;
     width: 100%;
     grid-template-columns: 100%;
@@ -305,7 +321,10 @@ h1{
     margin: 10px;
     padding: 10px;
 }
+.mainSugerencias{ 
+    height: 71vh;
 
+}
 /* media querries tablet*/ 
 @media screen and (max-width:768px) {
     header{
@@ -318,18 +337,32 @@ h1{
         "navBar";
         place-content: center center;
     }
+
+    header div a img{
+        width: 100%;
+        height: 80px;
+        border-radius: 50%;
+        margin: 10px;}
+    
+        .navBarItems a:link{
+            color: white;
+        }
+        .navBar1 a:visited{
+            color: white
+        }
+
     .formulario{
         margin: 30px 200px;
     }
+.main{
+    height: 80vh;
+}
 
-.main{ 
-    height: 100vh;
-}
-}
 .food{
     margin: 30px;
     flex-direction: column;
     align-items: flex-start;
+}
 }
 
 
@@ -345,8 +378,22 @@ h1{
         "navBar";
         place-content: center center;
     }
-    .mainHome{ 
-        height: 100vh;
+
+    header div a img{
+        width: 100%;
+        height: 30px;
+        border-radius: 50%;
+        margin: 10px;
+    }
+
+    .navBarItems a:link{
+        color: white;
+    }
+    .navBar1 a:visited{
+        color: white
+    }
+    .main{ 
+        height: 70vh;
     }
     .imagenHome{
         width: 100%;
@@ -368,4 +415,5 @@ h1{
         "hummus" 
         "fries"
         }
-    }
+
+}
