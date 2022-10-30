@@ -13,19 +13,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="contenedor">
-    <header class="header">
-        <div class="logo">
-            <a href="../index.html"><img class="logoAnimado" src="../assets/img/logo.png" alt=""></a>
+    <header class="container-fluid header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img class="logoAnimado d-inline-block align-text-top" src="../assets/img/logo.png" alt=""></a>
             <p>Sabores del Medio Oriente</p>
-        </div>
-        <nav class="navBar">
-            <ul class="navBar1">
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./menu.html">Menú</a></li>
-                <li><a href="./pedidos.html">Pedidos</a></li>
-                <li><a href="./sugerencias.html">Sugerencias</a></li>
-            </ul>
-        </nav>    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-">
+                    <li class="nav-item navBarItems">
+                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item navBarItems">
+                    <a class="nav-link" href="../pages/menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item navBarItems">
+                    <a class="nav-link" href="../pages/pedidos.html">Pedidos</a>
+                </li>
+                <li class="nav-item navBarItems">
+                <a class="nav-link" href="../pages/sugerencias.html">Sugerencias</a>
+                </li>
+            </div>
+            </div>
+        </nav>
     </header>
     <main class="main"><h1>Pedidos</h1>
     <section class="pedidosYa">
