@@ -70,8 +70,6 @@ header div p{
     color: firebrick;
 }
 
-
-
 /* footer */
 footer{
     display: flex;
@@ -288,16 +286,6 @@ h1{
 }
 /* media querries tablet*/ 
 @media screen and (max-width:768px) {
-    header{
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat (2,1fr);
-        grid-template-areas: 
-        "logo"
-        "navBar";
-        place-content: center center;
-    }
 
     header div a img{
         width: 100%;
@@ -325,16 +313,6 @@ h1{
 
 /*media querries mobile*/
 @media screen and (max-width:576px){
-    header{
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat (2,1fr);
-        grid-template-areas: 
-        "logo"
-        "navBar";
-        place-content: center center;
-    }
 
     header div a img{
         width: 100%;
@@ -368,5 +346,8 @@ h1{
         "hummus" 
         "fries"
         }
-
+        .formulario{
+            margin: 30px 20px;
+        }
+        
 }
