@@ -1,0 +1,22 @@
+{
+  "name": "proyecto-al-jufa",
+  "version": "1.0.0",
+  "description": "El proyecto consta de 5 HTML. Se trabajó con la tecnología HTML5 y CSS. Se posicionó los elementos utilizando Glexbox y Grids. Se utilizó Bootstrap para convertir las páginas Home y Nosotros en responsive.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zscaballero/proyecto-al-jufa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zscaballero/proyecto-al-jufa/issues"
+  },
+  "homepage": "https://github.com/zscaballero/proyecto-al-jufa#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
