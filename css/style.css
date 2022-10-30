@@ -10,6 +10,7 @@ body{
     font-family: 'lato';
 }
 /* header */
+
 header{
     display: grid;
     width: 100%;
