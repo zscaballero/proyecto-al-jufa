@@ -35,10 +35,6 @@ body {
   align-self: flex-end;
 }
 
-.mainSugerencias {
-  height: 100vh;
-}
-
 header div a img {
   width: 100%;
   border-radius: 50%;
@@ -114,6 +110,10 @@ footer div a img:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.mainIndex {
+  height: 533px;
 }
 
 .imagenHome {
@@ -234,6 +234,10 @@ footer div a img:hover {
   justify-content: center;
 }
 
+.mainSugerencias {
+  height: 533px;
+}
+
 .formulario {
   margin: 20px 500px;
   background: #FFEFBA;
@@ -314,6 +318,12 @@ footer div a img:hover {
     grid-template-columns: repeat 1, 1fr;
     grid-template-rows: repeat 6, 1fr;
     grid-template-areas: "shawarma" "falafel" "fatay" "shishKebab" "hummus" "fries";
+  }
+  .mainPedidos {
+    height: 140vh;
+  }
+  .mainSugerencias {
+    height: 100vh;
   }
   .formulario {
     margin: 30px 20px;
