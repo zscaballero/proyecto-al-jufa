@@ -1,0 +1,21 @@
+.formulario{
+    margin: 20px 500px;
+    background: #FFEFBA;  
+    background: -webkit-linear-gradient(to left top, #FFFFFF, #FFEFBA);  
+    background: linear-gradient(to left top, #FFFFFF, #FFEFBA); 
+}    
+
+.form{
+    margin:10px;
+}
+.calificacion{
+    display:flex;
+    justify-content: left;
+}
+.valoracion{
+    padding: 5px;
+}
+.enviar{
+    margin: 10px;
+    padding: 10px;
+}

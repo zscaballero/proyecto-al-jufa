@@ -1,0 +1,26 @@
+body{ 
+	background-image: linear-gradient(to bottom, #e0aa69, #e6b57a, #ecbf8b, #f2ca9c, #f8d5ad, #fadbb7, #fce1c1, #fee7cb, #fde9d0, #fdebd5, #fceddb, #fbefe0); 
+	font-family: 'lato' ;
+}
+.contenedor{
+	display: grid ;
+	width: 100% ;
+	grid-template-columns: 100% ;
+	grid-template-rows: 120px 1fr 100px ;
+	grid-template-areas: "header"
+    "main"
+    "footer" ;
+}
+.header {
+	grid-area: header ;
+}
+.main {
+	grid-area: main ;
+}
+.footer {
+	grid-area: footer ;
+	align-self: flex-end ;
+}
+.mainSugerencias {
+	height: 100vh ;
+}

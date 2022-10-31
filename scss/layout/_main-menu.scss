@@ -1,0 +1,57 @@
+.menuTitle{
+    text-align: center;
+}
+.comidas{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat (3, 1fr);
+    grid-template-areas: 
+    "shawarma falafel"
+    "fatay shishKebab"
+    "hummus fries";
+    }
+.shawarma{
+    margin: 20px;
+    grid-area: shawarma;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.falafel{
+    margin: 20px;
+    grid-area: falafel;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.fatay{ 
+    margin: 20px;
+    grid-area: fatay;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.shishKebab{
+    margin: 20px;
+    grid-area: shishKebab;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.hummus{
+    margin: 20px;
+    grid-area: hummus;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.fries{ 
+    margin: 20px;
+    grid-area: fries;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
