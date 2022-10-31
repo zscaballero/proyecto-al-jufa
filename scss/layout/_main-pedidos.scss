@@ -9,10 +9,7 @@
     height: 60px;
 }
 .whatsapp{
-    padding: 10px 30px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    @extend .pedidosYa;
 }
 .whatsappLogo{
     width: 50px;

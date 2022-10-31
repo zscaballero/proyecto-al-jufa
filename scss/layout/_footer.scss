@@ -25,10 +25,5 @@ footer {
 	align-items: center ;
 }
 .footerDireccion {
-	padding: 20px 10px 20px 30px ;
-	width: 800px ;
-	height: 100px ;
-	display: flex ;
-	justify-content: center ;
-	align-items: center ;
+    @extend .footerInstagram;
 }

@@ -1,14 +1,14 @@
 @media screen and (max-width:768px) {
     header nav div a img{
-        width: 100%;
+        @include medidas-Logo (width,radius,margin);
         height: 80px;
-        border-radius: 50%;
-        margin: 10px;}
+    }
+
     .mainIndex{
             height: 80vh;
         }
     .mainNosotros{
-            height: 80vh;
+        height: 80vh;
         }
     .mainPedidos{
         height: 100vh;

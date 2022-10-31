@@ -2,10 +2,8 @@ header {
 	div {
 		a {
 			img {
-				width: 100% ;
+				@include medidas-Logo (width,radius,margin);
 				height: 80px ;
-				border-radius: 50% ;
-				margin: 10px ;
             }
         }
 		p{ 

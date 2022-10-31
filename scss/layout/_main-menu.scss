@@ -12,46 +12,28 @@
     "hummus fries";
     }
 .shawarma{
-    margin: 20px;
     grid-area: shawarma;
-    display: flex;
-    gap: 20px;
-    align-items: center;
+    @include props-flex(margin,gap,align);
 }
 .falafel{
-    margin: 20px;
     grid-area: falafel;
-    display: flex;
-    gap: 20px;
-    align-items: center;
+    @include props-flex(margin,gap,align);
 }
 .fatay{ 
-    margin: 20px;
     grid-area: fatay;
-    display: flex;
-    gap: 20px;
-    align-items: center;
+    @include props-flex(margin,gap,align);
 }
 .shishKebab{
-    margin: 20px;
     grid-area: shishKebab;
-    display: flex;
-    gap: 20px;
-    align-items: center;
+    @include props-flex(margin,gap,align);
 }
 
 .hummus{
-    margin: 20px;
     grid-area: hummus;
-    display: flex;
-    gap: 20px;
-    align-items: center;
+    @include props-flex(margin,gap,align);
 }
 
 .fries{ 
-    margin: 20px;
     grid-area: fries;
-    display: flex;
-    gap: 20px;
-    align-items: center;
+    @include props-flex(margin,gap,align);
 }
